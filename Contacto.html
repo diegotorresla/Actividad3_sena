@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=0.75, maximum-scale=2">
+<title>Actividad_3</title>
+<link href="Estilos.css" rel="stylesheet">
+<script> 
+function pregunta(){ 
+    if (confirm('¿Estas seguro de enviar este formulario?')){ 
+       document.tuformulario.submit() 
+    } 
+} 
+</script>
+</head>
+
+<body>
+<header>
+<img src="Imagenes/Cabecera_empresa.png" alt="Encabezado y logotipo empresa">
+</header>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="Servicios.html">Servicios</a>
+<a>Contacto</a>
+</nav>
+<section>
+<h1>Formulario</h1>
+<br>
+<p>Diligencia el siguiente formulario para obtener informaión sobre viajes, rutas, tarifas o cualquier inquietud.</p>
+<form id="tuformulario">
+<fieldset>
+<legend>Datos de usuario</legend>
+<label for="nombre">Nombre</label>
+<input name="nombre" id="nombre" type="text"/><br>
+<label for="apellido">Apellido</label>
+<input name="apellido" id="apellido" type="text"/><br>
+<label for="correo">E-mail</label>
+<input name="correo" id="correo" type="email"><br>
+<label for="cel">Teléfono</label>
+<input name="cel" id="cel" type="number"><br>
+</fieldset>
+<br><br>
+<fieldset>
+<label for="descripcion">Comentario</label>
+<textarea id="descripcion"></textarea>
+</fieldset>
+<br>
+<input type="submit" onClick="pregunta()" value="Enviar">
+<button type="reset">Borrar</button> 
+</form>
+</section>
+
+<footer>
+<img src="Imagenes/Pie_empresa.png" alt="Pie de pagina">
+</footer>
+</body>
+</html>
